@@ -99,6 +99,6 @@ namespace :deploy do
 
   before :starting,  :check_revision
   before :setup_db,   :symlink_env_file # make sure to keep it up-to-date with real secrets
-  before :migrate, :symlink_env_file # WARN: use this only for the non-first deploy
-  # before :migrate, :setup_db # WARN: use this only for the first deploy
+  # before :migrate, :symlink_env_file # WARN: use this only for the non-first deploy
+  before :migrate, :setup_db # WARN: use this only for the first deploy
 end
