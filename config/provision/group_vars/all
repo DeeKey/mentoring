@@ -7,4 +7,4 @@ config_directory: '{{ deploy_directory }}/shared/config'
 pg_version: 9.6
 ruby_version: 2.3.3
 ansible_port: 22
-repo_url: 'git@github.com:vasiliqa/mentoring.git'
+repo_url: 'git@github.com:DeeKey/mentoring.git'
